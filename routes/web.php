@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::view("User","User");
 
 /*
 Route::get('/user/{name}', function ($name) {
