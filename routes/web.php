@@ -17,7 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::view("User","User");
+Route::get('/users', function () {
+    return view('users');
+});
+
 
 /*
 Route::get('/user/{name}', function ($name) {
