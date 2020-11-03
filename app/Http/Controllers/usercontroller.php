@@ -7,8 +7,8 @@ use Illuminate\Http\Request;
 class usercontroller extends Controller
 {
     //
-    function show($id)
+    function viewLoad()
     {
-        return $id;
+        return view(user);
     }
 }
