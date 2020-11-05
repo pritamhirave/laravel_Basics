@@ -7,8 +7,8 @@ use Illuminate\Http\Request;
 class usercontroller extends Controller
 {
     //
-    function viewLoad()
+    function index()
     {
-        return view(users);
+        return "Hello from controller";
     }
 }

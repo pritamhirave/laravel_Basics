@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use laravel\laravel\app\Http\Controllers\usercontroller;
+use App\Http\Controllers\usercontroller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,7 +21,7 @@ Route::get('/users', function() {
     return view('users');
 });
 */
-Route::get("users",[usercontroller::class,'viewLoad']);
+Route::get("users",[usercontroller::class,'index']);
 
 /*
 Route::get('/user/{name}', function ($name) {
