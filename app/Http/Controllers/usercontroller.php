@@ -9,6 +9,6 @@ class usercontroller extends Controller
     //
     function viewLoad()
     {
-        return view(user);
+        return view(users);
     }
 }
