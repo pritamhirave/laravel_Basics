@@ -9,6 +9,6 @@ class usercontroller extends Controller
     //
     function index()
     {
-        return "Hello from controller";
+        return "Hello Pritam";
     }
 }
