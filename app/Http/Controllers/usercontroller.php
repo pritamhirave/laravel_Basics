@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 class usercontroller extends Controller
 {
     //
+    
     function index()
     {
         return "Hello World";
