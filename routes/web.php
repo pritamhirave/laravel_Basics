@@ -22,7 +22,8 @@ Route::get('/users', function() {
 });
 */
 
-Route::get("users",[usercontroller::class,'index']);
+Route::Post("users",[usercontroller::class,'index']);
+Route::view("ligin","users");
 
 /*
 Route::get('/user/{name}', function ($name) {
