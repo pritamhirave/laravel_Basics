@@ -10,6 +10,6 @@ class usercontroller extends Controller
     
     function index()
     {
-        return "Hello World";
+        return "form data will be here";
     }
 }

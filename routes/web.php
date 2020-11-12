@@ -21,6 +21,7 @@ Route::get('/users', function() {
     return view('users');
 });
 */
+
 Route::get("users",[usercontroller::class,'index']);
 
 /*
