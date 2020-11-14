@@ -8,8 +8,8 @@ class usercontroller extends Controller
 {
     //
     
-    function index()
+    function index(Request $req)
     {
-        return "form data will be here";
+        return $req->input();
     }
 }
