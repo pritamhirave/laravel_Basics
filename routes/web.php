@@ -22,7 +22,7 @@ Route::get('/users', function() {
 });
 */
 
-Route::Post("users",[usercontroller::class,'index']);
+Route::get("users",[usercontroller::class,'index']);
 Route::view("login","users");
 
 /*
