@@ -20,7 +20,6 @@ class ageCheck
         {
             return redirect('noaccess');
         }
-        echo  "Text midddleware ";
         return $next($request);
     }
 }
