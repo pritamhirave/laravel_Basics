@@ -26,8 +26,7 @@ Route::get('/users', function() {
 Route::view('users','users');
 Route::view('home','home');
 Route::view('noaccess','noaccess');
-
-Route::view('middlewaew')
+Route::view('middlewaew');
 
 /*
 Route::get('/user/{name}', function ($name) {
@@ -35,4 +34,4 @@ Route::get('/user/{name}', function ($name) {
 });
 */
 //Route::get("user/{id}",[UserController::class,'show']);
-//Route::get("user",'usercontroller@show');
+//Route::get("user",'usercontroller@show')
