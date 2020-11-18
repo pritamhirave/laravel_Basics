@@ -26,7 +26,9 @@ Route::get('/users', function() {
 Route::view('users','users');
 Route::view('home','home');
 Route::view('noaccess','noaccess');
-Route::view('middlewaew');
+Route::view(['middleware'=>['protectedPage']],function(){
+   Route::view('users','users');
+});
 
 /*
 Route::get('/user/{name}', function ($name) {
