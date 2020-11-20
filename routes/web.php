@@ -23,7 +23,7 @@ Route::get('/users', function() {
 */
 
 //Route::get("users",[usercontroller::class,'index']);
-Route::view('users','users');
+Route::view('users','users')->middleware("protectedPage");
 Route::view('home','home');
 Route::view('noaccess','noaccess');
 Route::view(['middleware'=>['protectedPage']],function(){
