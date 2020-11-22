@@ -16,19 +16,17 @@ use App\Http\Controllers\usercontroller;
 Route::get('/', function () {
     return view('welcome');
 });
-/*
-Route::get('/users', function() {
-    return view('users');
-});
-*/
+
+Route::get("/users",[UserController::class,"index"]); 
+
 
 //Route::get("users",[usercontroller::class,'index']);
-Route::view('users','users')->middleware("protectedPage");
-Route::view('home','home');
-Route::view('noaccess','noaccess');
-Route::view(['middleware'=>['protectedPage']],function(){
-   Route::view('users','users');
-});
+//Route::view('users','users')->middleware("protectedPage");
+//Route::view('home','home');
+//Route::view('noaccess','noaccess');
+//Route::view(['middleware'=>['protectedPage']],function(){
+//Route::view('users','users');
+//});
 
 /*
 Route::get('/user/{name}', function ($name) {
