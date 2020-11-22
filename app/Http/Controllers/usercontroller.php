@@ -10,6 +10,7 @@ class usercontroller extends Controller
     
     function index(Request $req)
     {
-        return Http::get("https://reqres.in/api/users?page=1");
+        $collection=Http::get("https://reqres.in/api/users?page=1");
+        return view['users',['collection'=>$collection['data']]];
     }
-}
+} 
